@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="661.0" prefWidth="900.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #454545; -fx-border-color: #800000; -fx-border-width: 10;">
+         <children>
+            <LineChart layoutX="34.0" layoutY="58.0" prefHeight="183.0" prefWidth="650.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="#f0ecec" />
+              </yAxis>
+            </LineChart>
+            <Label fx:id="label" layoutX="176.0" layoutY="555.0" prefHeight="18.0" prefWidth="539.0" textFill="#df0c0c" />
+            <LineChart layoutX="34.0" layoutY="250.0" prefHeight="183.0" prefWidth="650.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" tickLabelFill="#f0ecec" />
+               </yAxis>
+            </LineChart>
+            <LineChart layoutX="34.0" layoutY="439.0" prefHeight="174.0" prefWidth="649.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" tickLabelFill="#f0ecec" />
+               </yAxis>
+            </LineChart>
+            <Text fill="WHITE" layoutX="51.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X Y Z:" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heartbeat:" />
+            <Label fx:id="time" layoutX="87.0" layoutY="-3.0" prefHeight="34.0" prefWidth="823.0" style="-fx-alignment: center;" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="741.0" layoutY="521.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="139.0" text="Measure" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

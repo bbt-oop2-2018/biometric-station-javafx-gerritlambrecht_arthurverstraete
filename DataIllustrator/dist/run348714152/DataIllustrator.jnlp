@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DataIllustrator.jnlp">
+  <information>
+    <title>DataIllustrator</title>
+    <vendor>Arthur</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DataIllustrator.jar" size="6197" download="eager" />
+    <jar href="lib\aaaaaaaaaaaa.jar" size="15855" download="eager" />
+    <jar href="lib\jSerialComm-2.0.2.jar" size="616949" download="eager" />
+    <jar href="lib\org.eclipse.paho.client.mqttv3-1.2.0.jar" size="202925" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DataIllustrator" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dataillustrator.DataIllustrator"  name="DataIllustrator" />
+  <update check="always"/>
+</jnlp>
